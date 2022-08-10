@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-width: 150px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background-color: #fff;
+  color: #d41443;
+  padding-left: 37px;
+  padding-right: 37px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  &--accent {
+    background-color: #d41443;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #d41342;
+    }
+  }
+}
+
+.button__icon {
+  width: 4px;
+  height: 8px;
+}
