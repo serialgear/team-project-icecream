@@ -1,20 +1,22 @@
 :root {
-  //   Colors
-  --color-primary: #000;
-  --color-accent: #d41443;
-  --color-light: #fff;
-  --color-other: #e18298;
-  --color-accent-bg: #ffb8ca;
-  --color-menu-bg: #e17992;
-  --color-accent-btn-bg: #d41443;
-  --color-light-btn-bg: #fff;
+	//   Colors
+	--color-primary: #000;
+	--color-accent: #d41443;
+	--color-light: #fff;
+	--color-other: #e18298;
 
-  // Fonts
-  --font-family: “DM Sans”;
-  --font-size: 16px;
-  --line-height: 1.1;
-  --letter-spacing: 0.03em;
+	--color-accent-bg: #ffb8ca;
+	--color-menu-bg: #e17992;
 
-  //   Animation
-  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	--color-accent-btn-bg: #d41443;
+	--color-light-btn-bg: #fff;
+	--color-hover-btn-bg: #ecebeb;
+
+	// Fonts
+	--font-family: "DM sans", sans-serif;
+	--font-size: 16px;
+	--letter-spacing: 0.04em;
+
+	//   Animation
+	--anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
