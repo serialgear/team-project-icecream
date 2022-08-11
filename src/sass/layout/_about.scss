@@ -1,1 +1,54 @@
-// це можна видалити
+.about {
+    // max-width: 1200px;
+    // margin: 0 auto;
+    // min-height: 1200px;
+    background-color: #FFF5F6;
+    background-image: url("../images/about/milk1.png");
+    background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    @include section;
+
+    &__label {
+        font-style: inherit;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFA5BA;
+        padding-bottom: 16px;
+
+    }
+    &__title {
+        font-size: 58px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        color: #D41443;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 176%;
+        /* or 28px */
+
+        letter-spacing: 0.04em;
+
+        color: #000000;
+        // width: 463px;
+
+    }
+}
+
+.about__text--grey {
+    color: #907E82;
+}
+
+.button__icon {
+    width: 10px;
+    height: 20px;
+}
