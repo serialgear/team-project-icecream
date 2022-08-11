@@ -13,7 +13,7 @@
 	font-weight: 700;
 	line-height: 1.31;
 
-	transition: var(--anim);
+	transition: background-color var(--anim);
 
 	&__icon {
 		fill: var(--color-accent);
