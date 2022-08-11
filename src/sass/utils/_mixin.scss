@@ -2,8 +2,14 @@
   flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }
 
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin mq($type) {
-  $mob: 480px;
+  $mob: 320px;
   $tab: 768px;
   $desk: 1200px;
 
@@ -42,4 +48,9 @@
       @content;
     }
   }
+}
+
+@mixin section($p-top: 60px, $p-bottom: 60px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
 }

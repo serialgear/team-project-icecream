@@ -1,0 +1,17 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  // outline: 1px solid tomato;
+
+  @include mq(mob) {
+    width: 320px;
+  }
+
+  @include mq(tab) {
+    width: 768px;
+  }
+
+  @include mq(desk) {
+    width: 1200px;
+  }
+}
