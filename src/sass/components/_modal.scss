@@ -1,0 +1,87 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  min-height: 600px;
+  background-color: #fff;
+  border-radius: 100px;
+  border: 5px solid var(--color-accent-bg);
+
+  padding: 72px 24px 40px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-accent-bg);
+  background-color: #fff;
+}
+
+.modal__close-icon {
+  fill: var(--color-accent-bg);
+}
+
+.form {
+  text-align: center;
+}
+
+.form__title {
+  margin-bottom: 8px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.8789;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.form__text {
+  margin-bottom: 16px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20;
+  line-height: 0.882;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-menu-bg);
+}
+
+.field {
+  display: block;
+}
+
+.field_label {
+  display: block;
+  margin-right: auto;
+}
+
+.field__input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 12px 24px;
+  border: 1px solid var(--color-other);
+  border-radius: 16px;
+}

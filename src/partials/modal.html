@@ -1,0 +1,44 @@
+<div class="backdrop">
+  <div class="modal">
+    <button class="modal__close" type="button" data-modal-close>
+      <svg class="modal__close-icon" width="32" height="32">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <div
+        class="form__group"
+        role="group"
+        aria-labelledby="contact-details-head"
+      >
+        <h2 class="form__title" id="contact-details-head">
+          Fill the form to make an order
+        </h2>
+        <p class="form__text">and enjoy your icecream!</p>
+        <label class="field"
+          ><span class="field_label">Name</span
+          ><input
+            type="text"
+            class="field__input"
+            name="name"
+            placeholder="John Dough"
+        /></label>
+        <label class="field"
+          >Phone<input
+            type="tel"
+            class="field__input"
+            name="phone"
+            placeholder="+38 (***)***-**-**"
+        /></label>
+        <label class="field"
+          >Email<input
+            type="email"
+            class="field__input"
+            name="email"
+            placeholder="example@email.com"
+        /></label>
+      </div>
+      <button class="button" type="submit">Place order</button>
+    </form>
+  </div>
+</div>
