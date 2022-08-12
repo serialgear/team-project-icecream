@@ -2,43 +2,105 @@
 /* ---- grid ---- */
 
 .grid {
-    max-width: 320px;
+  max-width: 320px;
+  @include mq(tab) {
+    max-width: 768px;
   }
-  
-  /* ---- grid-item ---- */
-  
-  .grid-sizer,
-  .grid-item {
-    width: 44px;
-    height: 44px;
-    float: left;
-    /* vertical gutter */
-    margin-bottom: 2px;
-    //   background: #d26;
-    //   border: 1px solid #333;
-    //   border-color: hsla(0, 0%, 0%, 0.5);
-    //   border-radius: 5px;
-    cursor: pointer;
+  @include mq(desk) {
+    max-width: 1015px;
   }
-  
-  .grid-item--width2 {
-    width: 90px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer {
+  width: 44px;
+  height: 44px;
+  float: left;
+  // border: 1px solid #333;
+}
+
+.grid-item {
+  width: 44px;
+  height: 44px;
+  float: left;
+  /* vertical gutter */
+  margin-bottom: 2px;
+  // border: 1px solid #333;
+  cursor: pointer;
+
+  @include mq(tab) {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 6px;
+  }
+
+  @include mq(desk) {
+    width: 138px;
+    height: 138px;
+    margin-bottom: 8px;
+  }
+}
+
+.grid-item--width2 {
+  width: 90px;
+  height: 90px;
+
+  @include mq(tab) {
+    width: 214px;
+    height: 214px;
+  }
+
+  @include mq(desk) {
+    width: 284px;
+    height: 284px;
+  }
+}
+
+.grid-item--height2 {
+  height: 26px;
+  @include mq(tab) {
+    height: 61px;
+  }
+  @include mq(desk) {
+    height: 80px;
+  }
+}
+.grid-item--height3 {
+  height: 29px;
+  @include mq(tab) {
+    height: 68px;
+  }
+  @include mq(desk) {
     height: 90px;
   }
-  
-  .grid-item--height2 {
-    height: 26px;
+}
+.grid-item--height4 {
+  height: 19px;
+  @include mq(tab) {
+    height: 44px;
   }
-  .grid-item--height3 {
-    height: 29px;
+  @include mq(desk) {
+    height: 57px;
   }
-  .grid-item--height4 {
-    height: 19px;
+}
+.grid-item--height5 {
+  height: 47px;
+  @include mq(tab) {
+    height: 111px;
   }
-  .grid-item--height5 {
-    height: 47px;
+  @include mq(desk) {
+    height: 146px;
   }
-  
-  .grid-item--marg {
-    margin-bottom: 0;
-  }
+}
+
+.grid-item--marg {
+  margin-bottom: 0;
+}
