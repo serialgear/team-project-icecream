@@ -8,5 +8,7 @@
         <symbol id="telegram" viewBox="0 0 32 32"><path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/><path fill="#fff" style="fill:#fff" d="m12.867 18.375-.318 4.169c.454 0 .651-.182.887-.401l2.13-1.9 4.415 3.017c.81.421 1.38.199 1.598-.695l2.898-12.673c.257-1.117-.433-1.554-1.222-1.28L6.223 14.698c-1.162.421-1.145 1.026-.198 1.3l4.354 1.264 10.115-5.907c.476-.294.909-.131.553.163l-8.182 6.857z"/></symbol>
         <symbol id="arrow-link" viewBox="0 0 24 24"><path d="M11.293 5.707 16.586 11H5a1 1 0 0 0 0 2h11.586l-5.293 5.293a.999.999 0 1 0 1.414 1.414l7-7a1.006 1.006 0 0 0 0-1.414l-7-7a.999.999 0 1 0-1.414 1.414z"/></symbol>
         <symbol id="vector" viewBox="0 0 8 10"><path fill="none" d="M1.61646 1L6.04413 5L1.61646 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="burger" viewBox="0 0 46 32"><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path></symbol>
+        <symbol id="close" viewBox="0 0 32 32"><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path></symbol>
     </defs>
 </svg>

@@ -1,1 +1,66 @@
-// це можна видалити
+.header {
+	background-color: var(--color-accent-bg);
+	&__top {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+
+		@include mq(tab) {
+			padding: 30px 0 0;
+		}
+
+		@include mq(desk) {
+			justify-content: space-between;
+			padding: 35px 0 20px;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+
+		@include mq(desk) {
+			margin-right: 0;
+		}
+	}
+
+	&__mobile-menu {
+		@include mq(desk) {
+			display: none;
+		}
+	}
+
+	&__desktop-menu {
+		display: none;
+
+		@include mq(desk) {
+			display: block;
+		}
+	}
+
+	&__icon-menu {
+		width: 20px;
+		height: 13px;
+
+		@include mq(tab) {
+			margin-right: 30px;
+		}
+
+		@include mq(desk) {
+			display: none;
+		}
+	}
+
+	&__btn {
+		display: none;
+
+		@include mq(tab) {
+			display: flex;
+		}
+	}
+
+	&__hero {
+	}
+}
