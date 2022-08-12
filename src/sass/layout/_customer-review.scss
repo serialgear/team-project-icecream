@@ -6,6 +6,9 @@
 
 .review__image {
   margin: 0 auto 32px auto;
+  @include mq(tab) {
+    margin-bottom: 20px;
+  }
 }
 
 .review__content {
