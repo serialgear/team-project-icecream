@@ -17,7 +17,7 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.16;
-  color: var(--color-light-pink);
+  color: var(--color-accent-bg);
 }
 
 .products_title {
@@ -104,7 +104,7 @@
 
 .icecream-card_btn {
   margin: 0 auto;
-  fill: var(--color-accent-btn-bg);
+  fill: var(--color-accent);
   padding: unset;
   min-width: unset;
   border-radius: 50%;
@@ -118,7 +118,7 @@
   z-index: 1;
   &:hover,
   &:focus {
-    background-color: var(--anim);
+    background-color: var(--color-accent);
     cursor: pointer;
     fill: var(--color-light);
   }
