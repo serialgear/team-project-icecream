@@ -1,14 +1,37 @@
 /* ---- Masonry ---- */
 /* ---- grid ---- */
+:root {
+  --gutter: 2px;
+  --column: 7;
+}
+
+@include mq(tab) {
+  :root {
+    --gutter: 6px;
+  }
+}
+
+@include mq(desk) {
+  :root {
+    --gutter: 8px;
+  }
+}
+
+// Width all images
+@mixin img-width() {
+  width: calc((100% - var(--gutter) * (var(--column) - 1)) / var(--column));
+}
+
+// Width large image
+@mixin img-width-large() {
+  width: calc(
+    ((100% - var(--gutter) * (var(--column) - 1)) / var(--column)) * 2 +
+      var(--gutter)
+  );
+}
 
 .grid {
-  max-width: 320px;
-  @include mq(tab) {
-    max-width: 768px;
-  }
-  @include mq(desk) {
-    max-width: 1015px;
-  }
+  max-width: 100%;
 }
 
 /* clearfix */
@@ -21,45 +44,45 @@
 /* ---- grid-item ---- */
 
 .grid-sizer {
-  width: 44px;
+  @include img-width();
   height: 44px;
   float: left;
   // border: 1px solid #333;
 }
 
 .grid-item {
-  width: 44px;
+  @include img-width();
   height: 44px;
   float: left;
   /* vertical gutter */
-  margin-bottom: 2px;
+  margin-bottom: var(--gutter);
   // border: 1px solid #333;
   cursor: pointer;
 
   @include mq(tab) {
-    width: 104px;
+    @include img-width();
     height: 104px;
-    margin-bottom: 6px;
+    margin-bottom: var(--gutter);
   }
 
   @include mq(desk) {
-    width: 138px;
+    @include img-width();
     height: 138px;
-    margin-bottom: 8px;
+    margin-bottom: var(--gutter);
   }
 }
 
 .grid-item--width2 {
-  width: 90px;
+  @include img-width-large();
   height: 90px;
 
   @include mq(tab) {
-    width: 214px;
+    @include img-width-large();
     height: 214px;
   }
 
   @include mq(desk) {
-    width: 284px;
+    @include img-width-large();
     height: 284px;
   }
 }

@@ -2,4 +2,8 @@
 
 .gallery__container {
   padding: 0;
+
+  @include mq(desk) {
+    max-width: 1016px;
+  }
 }
