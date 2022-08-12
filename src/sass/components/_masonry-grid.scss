@@ -1,0 +1,44 @@
+/* ---- Masonry ---- */
+/* ---- grid ---- */
+
+.grid {
+    max-width: 320px;
+  }
+  
+  /* ---- grid-item ---- */
+  
+  .grid-sizer,
+  .grid-item {
+    width: 44px;
+    height: 44px;
+    float: left;
+    /* vertical gutter */
+    margin-bottom: 2px;
+    //   background: #d26;
+    //   border: 1px solid #333;
+    //   border-color: hsla(0, 0%, 0%, 0.5);
+    //   border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .grid-item--width2 {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .grid-item--height2 {
+    height: 26px;
+  }
+  .grid-item--height3 {
+    height: 29px;
+  }
+  .grid-item--height4 {
+    height: 19px;
+  }
+  .grid-item--height5 {
+    height: 47px;
+  }
+  
+  .grid-item--marg {
+    margin-bottom: 0;
+  }
