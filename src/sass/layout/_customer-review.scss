@@ -1,4 +1,99 @@
 .review {
+  @include section;
+
   background-color: var(--color-light);
-  outline: tomato;
+}
+
+.review__image {
+  margin: 0 auto 32px auto;
+  @include mq(tab) {
+    margin-bottom: 20px;
+  }
+}
+
+.review__content {
+  position: relative;
+  margin-bottom: 36px;
+  padding: 43px 50px 26px 50px;
+
+  background-color: #fafafa;
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    top: 30px;
+    width: 54px;
+    height: 40px;
+
+    background-image: url(../images/review/icons/quotes.svg);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -16px;
+    left: 50%;
+    width: 32px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background-image: url(../images/review/icons/markers.svg);
+  }
+}
+
+.review__wrapper {
+  padding-left: 15px;
+  padding-right: 8px;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 30px,
+    #e1e1e1 1px,
+    #e1e1e1 31px
+  );
+}
+
+.review__text {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+}
+
+.review__name {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+}
+
+.slick-dots li {
+  margin-right: 18px;
+}
+
+.slick-dots li button:before {
+  content: '';
+  opacity: 1;
+
+  background-image: url(../images/review/icons/ellipse.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+
+  color: transparent;
+  background-image: url(../images/review/icons/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
