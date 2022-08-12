@@ -22,7 +22,7 @@
 
 .products_title {
   margin: 0 auto;
-  margin-bottom: 8px;
+  margin-bottom: 148px;
   max-width: 200px;
   font-size: 34px;
   line-height: 1.15;
@@ -33,9 +33,12 @@
 }
 
 .products_img {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  transform: translateY(150px);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // margin: 0 auto;
+  // margin-bottom: 20px;
+  // transform: translateY(150px);
 }
 
 .icecream-card_title {
@@ -78,6 +81,7 @@
 
 .icecream-card--wrap {
   border-radius: 24px;
+  // margin-top: 127px;
   padding: 40px;
   padding-top: 161px;
 }
@@ -94,13 +98,13 @@
   background-color: var(--color-green);
 }
 
-.icecream-card:not(:last-child) {
-  margin-bottom: -135px;
-}
+// .icecream-card:not(:last-child) {
+//   margin-bottom: -135px;
+// }
 
-.icecream-card:first-child {
-  margin-top: -135px;
-}
+// .icecream-card:first-child {
+//   margin-top: -135px;
+// }
 
 .icecream-card_btn {
   margin: 0 auto;
@@ -125,8 +129,11 @@
 }
 
 @media screen and (min-width: '768px') {
-  .icecream-card:not(:last-child) {
-    margin-bottom: unset;
+  // .icecream-card:not(:last-child) {
+  //   margin-bottom: unset;
+  // }
+  .ice-cream_card {
+    position: relative;
   }
   .products_list {
     display: flex;
@@ -134,28 +141,34 @@
   .icecream-card_text {
     line-height: 176%;
   }
-  .icecream-card {
-    margin-top: -135px;
-  }
+  // .icecream-card {
+  //   margin-top: -135px;
+  // }
   .icecream-card:not(:last-child) {
     margin-right: 20px;
   }
-  .products_img {
-    height: 230px;
-  }
+
   .products {
     padding-bottom: 60px;
     padding-top: 60px;
   }
   .products_title {
-    margin-bottom: 20px;
+    margin-bottom: 158px;
     font-size: 48px;
     max-width: 285px;
   }
   .icecream-card--wrap {
+    position: relative;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 40px;
+  }
+  .products_img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 2;
+    height: 230px;
   }
   .sub-title-section {
     font-size: 26px;
@@ -166,13 +179,17 @@
 
 @media screen and (min-width: '1200px') {
   .icecream-card:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 32px;
   }
   .products_img {
+    position: absolute;
+    left: 50%;
+    // transform: translate(-50%, -25%);
+    z-index: 2;
     height: unset;
   }
   .products_title {
-    margin-bottom: 20px;
+    margin-bottom: 281px;
     font-size: 58px;
     max-width: 350px;
   }
