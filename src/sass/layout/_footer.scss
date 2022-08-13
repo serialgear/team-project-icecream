@@ -1,5 +1,6 @@
 .footer {
   background-color: #fff5f6;
+  padding-top: 60px;
 
   &--media {
     @include mq(tab) {
@@ -9,7 +10,6 @@
     }
     @include mq(desk) {
       width: 1200px;
-      padding-top: 60px;
     }
   }
 

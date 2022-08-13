@@ -13,6 +13,10 @@
       var(--color-light) 57%
     );
   }
+
+  @include mq(desk) {
+    @include section;
+  }
 }
 
 .gallery__container {
