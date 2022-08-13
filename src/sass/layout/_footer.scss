@@ -73,7 +73,7 @@
   margin-top: 40px;
 
   @include mq(tab) {
-    margin: 0;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
