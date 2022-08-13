@@ -1,14 +1,9 @@
-// import Masonry from 'masonry-layout';
-
-screen.addEventListener('orientationchange', function (event) {
-  console.log('The orientation of the screen is: ' + screen.orientation);
-});
+//Masonry Gallery;
 
 $('.grid').masonry({
   itemSelector: '.grid-item',
   stamp: '.stamp',
   // gutter: 2,
-  // horizontalOrder: true,
   columnWidth: '.grid-sizer',
   percentPosition: false,
 });
@@ -21,14 +16,14 @@ if (window.matchMedia('(min-width: 1200px)').matches) {
   $('.grid').masonry({
     gutter: 6,
   });
-} else if (window.matchMedia('(min-width: 320px)').matches) {
+} else if (window.matchMedia('(max-width: 767px)').matches) {
   $('.grid').masonry({
     gutter: 2,
   });
 }
 
 window.addEventListener('resize', function () {
-  console.log('Размер окна теперь равен ' + window.screen.width + 'px');
+  // console.log('The window size is ' + window.screen.width + 'px');
 
   if (window.matchMedia('(min-width: 1200px)').matches) {
     $('.grid').masonry({
@@ -38,7 +33,7 @@ window.addEventListener('resize', function () {
     $('.grid').masonry({
       gutter: 6,
     });
-  } else if (window.matchMedia('(min-width: 320px)').matches) {
+  } else if (window.matchMedia('(max-width: 767px)').matches) {
     $('.grid').masonry({
       gutter: 2,
     });
