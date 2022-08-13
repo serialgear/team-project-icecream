@@ -1,5 +1,39 @@
 // Gallery
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-bg-section) 20%,
+    var(--color-light) 20%
+  );
+}
 
 .gallery__container {
   padding: 0;
+
+  @include mq(desk) {
+    max-width: 1016px;
+  }
+}
+
+.gallery__img {
+  cursor: pointer;
+  border-radius: 8px;
+
+  @include mq(tab) {
+    border-radius: 20px;
+  }
+
+  transition: box-shadow, var(--anim), transform, var(--anim);
+
+  &:hover,
+  &:focus {
+    transform: scale(0.95);
+    box-shadow: 0 0px 1px 0 rgb(212 20 67 / 0.4),
+      0 0px 2px 2px rgb(212 20 67 / 0.2);
+
+    @include mq(tab) {
+      box-shadow: 0 0px 2px 0 rgb(212 20 67 / 0.4),
+        0 0px 6px 3px rgb(212 20 67 / 0.2);
+    }
+  }
 }

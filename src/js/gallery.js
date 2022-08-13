@@ -1,25 +1,41 @@
-// import Masonry from 'masonry-layout';
+//Masonry Gallery;
 
-window.onload = () => {
-  const grid = document.querySelector('.grid');
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  stamp: '.stamp',
+  // gutter: 2,
+  columnWidth: '.grid-sizer',
+  percentPosition: false,
+});
 
-  const masonry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-
-    gutter: 2,
-    stagger: 30,
-    // horizontalOrder: true,
-    columnWidth: '.grid-sizer',
-    percentPosition: true,
+if (window.matchMedia('(min-width: 1200px)').matches) {
+  $('.grid').masonry({
+    gutter: 8,
   });
+} else if (window.matchMedia('(min-width: 768px)').matches) {
+  $('.grid').masonry({
+    gutter: 6,
+  });
+} else if (window.matchMedia('(max-width: 767px)').matches) {
+  $('.grid').masonry({
+    gutter: 2,
+  });
+}
+
+window.addEventListener('resize', function () {
+  // console.log('The window size is ' + window.screen.width + 'px');
 
   if (window.matchMedia('(min-width: 1200px)').matches) {
-    masonry = new Masonry(grid, {
+    $('.grid').masonry({
       gutter: 8,
     });
   } else if (window.matchMedia('(min-width: 768px)').matches) {
-    masonry = new Masonry(grid, {
+    $('.grid').masonry({
       gutter: 6,
     });
+  } else if (window.matchMedia('(max-width: 767px)').matches) {
+    $('.grid').masonry({
+      gutter: 2,
+    });
   }
-};
+});
