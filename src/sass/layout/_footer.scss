@@ -106,8 +106,7 @@
     fill: #fea5bb;
     transition: background-color var(--anim);
 
-    &:hover,
-    &:focus {
+    &:hover {
         fill: #D41443;
         transition: fill var(--anim);
     }
