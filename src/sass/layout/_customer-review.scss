@@ -27,7 +27,7 @@ $review-linear-gradient-desk: repeating-linear-gradient(
 
   background-color: var(--color-light);
   @include mq(desk) {
-    @include section(120px, 60px);
+    @include section;
   }
 }
 
