@@ -1,6 +1,6 @@
 .contacts__section {
   padding-bottom: 40px;
-  
+
   background: var(--color-bg-section);
   background-image: linear-gradient(
     var(--color-light) 0%,
@@ -11,14 +11,12 @@
 
   @include mq(tab) {
     padding-top: 20px;
-    
-
     background: var(--color-bg-section);
     background-image: linear-gradient(
-    var(--color-light) 0%,
-    var(--color-light) 46%,
-    var(--color-bg-section) 46%,
-    var(--color-bg-section) 100%
+      var(--color-light) 0%,
+      var(--color-light) 46%,
+      var(--color-bg-section) 46%,
+      var(--color-bg-section) 100%
     );
   }
   @include mq(desk) {
@@ -27,10 +25,10 @@
 
     background: var(--color-bg-section);
     background-image: linear-gradient(
-    var(--color-light) 0%,
-    var(--color-light) 20%,
-    var(--color-bg-section) 20%,
-    var(--color-bg-section) 100%
+      var(--color-light) 0%,
+      var(--color-light) 20%,
+      var(--color-bg-section) 20%,
+      var(--color-bg-section) 100%
     );
   }
 }
@@ -220,7 +218,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 14px;
   }
 
@@ -230,71 +227,24 @@
 }
 
 .contacts__btn {
-  min-width: 161px;
-  height: 44px;
+  padding: 0;
+  width: 160px;
 
   @include mq(tab) {
-    min-width: 191px;
+    width: 190px;
   }
+
   @include mq(desk) {
-    min-width: 198px;
+    width: 200px;
   }
 }
 
-.contacts__button-icon {
-  width: 8px;
-  height: 10px;
-}
-.button-light {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-
-  font-weight: 700;
-  font-size: 16px;
-
-  color: var(--color-accent);
-  background-color: var(--color-light);
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-
-  transition: background-color var(--anim);
-
-  &:hover,
-  &:focus {
-    background-color: var(--color-hover-btn-bg);
+.contacts__btn--resize {
+  @include mq(tab) {
+    width: 175px;
   }
-}
 
-.button-dark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-
-  font-weight: 700;
-  font-size: 16px;
-
-  color: var(--color-light);
-  background-color: var(--color-accent);
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-
-  transition: background-color 250ms 250ms;
-
-  &:hover,
-  &:focus {
-    background-color: var(--color-btn-bg-dark-hover);
+  @include mq(desk) {
+    width: 170px;
   }
-}
-
-.button-light__icon,
-.button-dark__icon {
-  // width: 4px;
-  // height: 8px;
-  fill: currentColor;
-  margin-left: 12px;
 }
