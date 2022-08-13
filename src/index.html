@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,10 +52,10 @@
     <!-- styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
+
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/advantages.html"></include>
@@ -65,7 +65,6 @@
     <include src="./partials/footer.html"></include>
 
     <!-- slick jquery -->
-
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -80,6 +79,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script type="module" src="./index.js"></script>
 
     <!-- Masonry -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

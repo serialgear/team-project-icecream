@@ -1,5 +1,12 @@
 .header {
 	background-color: var(--color-accent-bg);
+	overflow: hidden;
+	&__container {
+		@include mq(tab-only) {
+			padding: 0 32px;
+		}
+	}
+
 	&__top {
 		display: flex;
 		align-items: center;
@@ -41,8 +48,10 @@
 	}
 
 	&__icon-menu {
-		width: 20px;
-		height: 13px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--color-accent-bg);
 
 		@include mq(tab) {
 			margin-right: 30px;
@@ -51,6 +60,10 @@
 		@include mq(desk) {
 			display: none;
 		}
+	}
+
+	&__menu-icon {
+		fill: var(--color-accent);
 	}
 
 	&__btn {
@@ -62,5 +75,8 @@
 	}
 
 	&__hero {
+		@include mq(tab) {
+			display: flex;
+		}
 	}
 }
