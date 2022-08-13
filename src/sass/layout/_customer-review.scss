@@ -200,6 +200,5 @@ $review-linear-gradient-desk: repeating-linear-gradient(
 }
 
 .slick-arrow {
-  opacity: 0;
-  pointer-events: none;
+  display: none !important;
 }
