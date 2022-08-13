@@ -93,25 +93,25 @@
     color: var(--color-primary);
     font-size: 12px;
     line-height: 1.58;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 
     @include mq(tab) {
       font-size: 14px;
       line-height: 1.78;
-      padding-bottom: 40px;
+      margin-bottom: 40px;
     }
 
     @include mq(desk) {
       font-size: 16px;
-      line-height: 1.75;
-      padding-bottom: 32px;
+      line-height: 1.76;
+      margin-bottom: 32px;
     }
   }
 }
 
 .about__text--grey {
   color: #907e82;
-  padding-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -120,11 +120,23 @@
   @include mq(tab) {
     font-size: 14px;
     line-height: 1.78;
+    margin-bottom: 10px;
   }
 
   @include mq(desk) {
     font-size: 14px;
     line-height: 1.93;
+    margin-bottom: 40px;
+  }
+}
+
+.about__text--lower {
+  @include mq(tab) {
+    margin-bottom: 20px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 40px;
   }
 }
 
@@ -141,23 +153,24 @@
   }
 
   @include mq(desk) {
-    display: flex;
+    // gap: 50px;
   }
 }
 
 .about__img-wrapper {
-  @include mq(tab) {
+  @include mq(tab-only) {
     flex: 1;
-    margin: 0px 32px 0px 32px;
+    margin: 0px 32px 0px 16px;
   }
 
   @include mq(desk) {
-    margin: 0px 100px 20px auto;
+    margin-left: auto;
+    flex-shrink: 1;
   }
 }
 
 .about__img {
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .about__inner {
@@ -166,14 +179,14 @@
   }
 
   @include mq(desk) {
-    padding: 90px 121px 0 0;
+    padding: 90px 105px 0 99px;
   }
 }
 
 .about__info {
   display: block;
   margin-top: 40px;
-  margin-right: 80px;
+  margin-right: 60px;
 
   @include mq(tab) {
     flex: 1;
@@ -183,6 +196,7 @@
 
   @include mq(desk) {
     flex: 1;
+    flex-grow: 1;
     max-width: none;
     margin: 0;
   }
