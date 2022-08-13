@@ -1,1 +1,279 @@
-// це можна видалити
+.hero {
+	position: relative;
+	@include mq(mob-only) {
+		padding-top: 15px;
+	}
+	&__info {
+		@include mq(tab) {
+			margin-right: auto;
+			padding-top: 20px;
+		}
+
+		@include mq(desk) {
+			padding-top: 40px;
+		}
+	}
+
+	&__icecream {
+		img {
+			position: relative;
+			z-index: 2;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 36px;
+			width: 346px;
+			height: 344px;
+			border-radius: 100%;
+			background-color: var(--color-circle-bg);
+		}
+
+		@include mq(mob-only) {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		@include mq(tab) {
+			display: block;
+			margin-right: auto;
+			margin-left: -70px;
+
+			&::after {
+				width: 335px;
+				height: 333px;
+				top: -30px;
+				left: 32%;
+			}
+		}
+
+		@include mq(desk) {
+			margin-right: 210px;
+			margin-left: 0;
+			&::after {
+				top: -55px;
+				left: 43%;
+				width: 534px;
+				height: 534px;
+			}
+		}
+	}
+
+	&__progress {
+		display: none;
+
+		@include mq(tab) {
+			display: block;
+			padding-top: 20px;
+		}
+
+		@include mq(desk) {
+			padding-top: 40px;
+		}
+	}
+}
+
+.info-hero {
+	@include mq(mob-only) {
+		position: absolute;
+		top: 105px;
+		left: 0;
+		z-index: 3;
+	}
+	&__title {
+		font-family: "Titan One", sans-serif;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 1.15;
+		text-transform: uppercase;
+		color: var(--color-light);
+		max-width: 220px;
+
+		@include mq(tab) {
+			font-size: 22px;
+			max-width: 160px;
+		}
+
+		@include mq(desk) {
+			font-size: 38px;
+			max-width: 275;
+		}
+	}
+
+	&__title--accent {
+		font-size: 48px;
+		line-height: 97%;
+		color: var(--color-accent);
+
+		@include mq(tab) {
+			font-size: 34px;
+			line-height: 90%;
+		}
+
+		@include mq(desk) {
+			font-size: 58px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		column-gap: 8px;
+
+		@include mq(desk) {
+			column-gap: 12px;
+		}
+	}
+
+	&__btn {
+		font-weight: 400;
+		font-size: 8px;
+		line-height: 1.25;
+		height: 24px;
+		padding: 0 14px;
+
+		@include mq(desk) {
+			font-size: 14px;
+			line-height: 1.28;
+			height: 40px;
+			padding: 0 25px;
+		}
+	}
+
+	&__btn-other {
+		padding: 0 14px;
+
+		@include mq(desk) {
+			padding: 0 20px;
+		}
+	}
+
+	&__milk {
+		display: none;
+
+		@include mq(tab) {
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 15px;
+			display: flex;
+			align-items: center;
+		}
+
+		@include mq(desk) {
+			bottom: 60px;
+		}
+	}
+
+	&__box {
+		@include mq(desk) {
+			margin-top: 50px;
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 2;
+		max-width: 125px;
+		font-size: 8px;
+		line-height: 150%;
+		color: var(--color-light);
+		margin-bottom: 7px;
+
+		@include mq(desk) {
+			font-size: 14px;
+			line-height: 140%;
+			max-width: 200px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.progress-hero {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -2px;
+			right: 0;
+			width: 16px;
+			height: 16px;
+			border-radius: 100%;
+			background-color: var(--color-light-bg);
+		}
+
+		@include mq(desk) {
+			&::after {
+				width: 30px;
+				height: 30px;
+				top: -5px;
+			}
+		}
+	}
+
+	&__quantity {
+		font-family: "Titan One", sans-serif;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 1.15;
+		color: var(--color-accent);
+		position: relative;
+		z-index: 2;
+		margin-right: 8px;
+
+		@include mq(desk) {
+			font-size: 46px;
+			margin-right: 14px;
+		}
+	}
+
+	&__text {
+		font-size: 8px;
+		line-height: 1.25;
+		color: var(--color-light);
+		margin-right: 8px;
+
+		@include mq(desk) {
+			font-size: 14px;
+			line-height: 1.28;
+			margin-right: 14px;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.button-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	background-color: var(--color-light-btn-bg);
+
+	&__icon {
+		fill: var(--color-accent);
+	}
+
+	@include mq(desk) {
+		width: 26px;
+		height: 26px;
+	}
+}

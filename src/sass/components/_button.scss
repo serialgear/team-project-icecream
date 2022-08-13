@@ -6,7 +6,7 @@
 
 	height: 44px;
 	padding: 0 37px;
-	background-color: var(--color-light-btn-bg);
+	background-color: var(--color-light);
 	border-radius: 22px;
 
 	color: var(--color-accent);
@@ -26,12 +26,12 @@
 }
 
 .button--accent {
-	background-color: var(--color-accent-btn-bg);
+	background-color: var(--color-accent);
 	color: var(--color-light);
 
 	&:hover,
 	&:focus {
-		background-color: rgba(212, 20, 68, 0.78);
+		background-color: var(--color-accent-hover-btn-bg);
 	}
 }
 

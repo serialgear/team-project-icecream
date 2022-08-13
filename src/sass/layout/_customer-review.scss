@@ -1,32 +1,95 @@
+$review-linear-gradient-mob: repeating-linear-gradient(
+  to bottom,
+  var(--color-review-bg),
+  var(--color-review-bg) 30px,
+  var(--color-linear) 1px,
+  var(--color-linear) 31px
+);
+
+$review-linear-gradient-tab: repeating-linear-gradient(
+  to bottom,
+  var(--color-review-bg-tab),
+  var(--color-review-bg-tab) 29px,
+  var(--color-linear) 1px,
+  var(--color-linear) 30px
+);
+
+$review-linear-gradient-desk: repeating-linear-gradient(
+  to bottom,
+  var(--color-review-bg),
+  var(--color-review-bg) 29px,
+  var(--color-linear) 1px,
+  var(--color-linear) 30px
+);
+
 .review {
   @include section;
 
   background-color: var(--color-light);
+  @include mq(desk) {
+    @include section;
+  }
 }
 
 .review__image {
-  margin: 0 auto 32px auto;
+  margin: 0 auto 32px;
   @include mq(tab) {
     margin-bottom: 20px;
+  }
+  @include mq(desk) {
+    margin-bottom: 16px;
   }
 }
 
 .review__content {
   position: relative;
   margin-bottom: 36px;
-  padding: 43px 50px 26px 50px;
+  padding: 43px 50px 26px;
 
-  background-color: #fafafa;
+  background-color: var(--color-review-bg);
+
+  @include mq(tab) {
+    margin: 0 64px 24px;
+    padding: 37px 6px 36px;
+
+    background-color: var(--color-light--color-review-bg-tab);
+  }
+
+  @include mq(desk) {
+    margin: 0 100px 36px;
+    padding: 47px 74px 31px 72px;
+
+    background-color: var(--color-review-bg);
+  }
 
   &::before {
     position: absolute;
     content: '';
-    left: 50px;
+    left: 53px;
     top: 30px;
     width: 54px;
     height: 40px;
 
     background-image: url(../images/review/icons/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mq(tab) {
+      left: 6px;
+      top: 20px;
+      width: 60px;
+
+      background-size: contain;
+    }
+
+    @include mq(desk) {
+      left: 72px;
+      top: 32px;
+      width: 54px;
+
+      background-size: cover;
+    }
   }
 
   &::after {
@@ -40,6 +103,14 @@
     transform: translateX(-50%);
 
     background-image: url(../images/review/icons/markers.svg);
+
+    @include mq(tab) {
+      bottom: -4px;
+    }
+
+    @include mq(desk) {
+      bottom: -16px;
+    }
   }
 }
 
@@ -47,13 +118,20 @@
   padding-left: 15px;
   padding-right: 8px;
 
-  background-image: repeating-linear-gradient(
-    to bottom,
-    #fafafa,
-    #fafafa 30px,
-    #e1e1e1 1px,
-    #e1e1e1 31px
-  );
+  background-image: $review-linear-gradient-mob;
+
+  @include mq(tab) {
+    padding-left: 42px;
+    padding-right: 45px;
+
+    background-image: $review-linear-gradient-tab;
+  }
+  @include mq(desk) {
+    padding-left: 36px;
+    padding-right: 35px;
+
+    background-image: $review-linear-gradient-desk;
+  }
 }
 
 .review__text {
@@ -62,7 +140,19 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
+  letter-spacing: normal;
   text-align: center;
+
+  @include mq(tab) {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+
+  @include mq(desk) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
 .review__name {
@@ -71,16 +161,41 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
+  letter-spacing: normal;
   text-align: center;
+
+  @include mq(tab) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+  }
+
+  @include mq(desk) {
+    font-size: 20px;
+  }
 }
 
 .slick-dots li {
-  margin-right: 18px;
+  margin: 0 18px 0 0;
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
 }
 
 .slick-dots li button:before {
   content: '';
   opacity: 1;
+  width: 12px;
+  height: 12px;
 
   background-image: url(../images/review/icons/ellipse.svg);
   background-repeat: no-repeat;
