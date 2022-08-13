@@ -27,7 +27,7 @@ $review-linear-gradient-desk: repeating-linear-gradient(
 
   background-color: var(--color-light);
   @include mq(desk) {
-    @include section(120px, 120px);
+    @include section(120px, 60px);
   }
 }
 
@@ -179,9 +179,17 @@ $review-linear-gradient-desk: repeating-linear-gradient(
   margin-right: 18px;
 }
 
+.slick-dots li button {
+  // width: 12px;
+  // height: 12px;
+  padding: 0;
+}
+
 .slick-dots li button:before {
   content: '';
   opacity: 1;
+  width: 12px;
+  height: 12px;
 
   background-image: url(../images/review/icons/ellipse.svg);
   background-repeat: no-repeat;
