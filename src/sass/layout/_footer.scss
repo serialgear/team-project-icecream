@@ -1,177 +1,184 @@
 .footer {
-    background-color: #fff5f6;
-    padding-top: 40px;
-     
-           
-    &--media {
-        @include mq(tab) {
-            width: 690px;
-            display: flex;
-            justify-content: space-between;
-        }
-        @include mq(desk) {
-            width: 1200px;
-        }
-    }
-        
-     .footer__title {
-       font-family: Titan One,cursive;
-       width: 234px;
-        text-transform: uppercase;
-        text-align: left;
+  background-color: #fff5f6;
+  padding-top: 40px;
 
-        @include mq(tab) {
-            width: 340px;
+  &--media {
+    @include mq(tab) {
+      width: 690px;
+      display: flex;
+      justify-content: space-between;
     }
     @include mq(desk) {
-        width: 480px;
+      width: 1200px;
+    }
+  }
+
+  .footer__title {
+    font-family: Titan One, cursive;
+    width: 234px;
+    text-transform: uppercase;
+    text-align: left;
+
+    @include mq(tab) {
+      width: 340px;
+    }
+    @include mq(desk) {
+      width: 480px;
     }
 
-        &--pink {
-            color: #ffa5ba;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.17;
-           
-            @include mq(tab) {
-                font-size: 26px;
-                line-height: 1.15;
-                letter-spacing: 0.04em;
-            }
-            
-            @include mq(desk) {
-                font-size: 30px;
-                line-height: 1.13;
-                letter-spacing: 0.04em;
-            }
-        }
-        
-        &--crimson {
-            margin-top: 16px;
-            font-weight: 400;
-        font-size: 34px;
+    &--pink {
+      color: #ffa5ba;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.17;
+
+      @include mq(tab) {
+        font-size: 26px;
         line-height: 1.15;
         letter-spacing: 0.04em;
-        color: #d41443;
+      }
 
-        @include mq(tab) {
-            margin-top: 12px;
-            font-size: 48px;
-            line-height: 1.15;
-            letter-spacing: 0.06em;
-        }
-        
-        @include mq(desk) {
-            font-size: 58px;
-            line-height: 1.14;
-            letter-spacing: 0.06em;
-        }
+      @include mq(desk) {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+      }
     }
+
+    &--crimson {
+      margin-top: 16px;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      color: var(--color-accent);
+
+      @include mq(tab) {
+        margin-top: 12px;
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+      }
+
+      @include mq(desk) {
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+      }
     }
+  }
 }
 
 .footer-social {
-    margin: 40px 0 0 auto;
+  margin-top: 40px;
 
-    @include mq(tab) {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
+  @include mq(tab) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
-}
+  }
 
-@include mq(desk) {
+  @include mq(desk) {
     margin: 0;
   }
 }
 
 .footer-links {
-      display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: center;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
 }
 
 .footer-social-list:not(:last-child) {
-    margin-right: 28px;
+  margin-right: 28px;
 }
 
 .footer-social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    color: #ffffff;
-    fill: #fea5bb;
-    transition: background-color var(--anim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #ffffff;
+  fill: #fea5bb;
+  transition: background-color var(--anim);
 
-    &:hover,
-    &:focus {
-        fill: #D41443;
-        transition: fill var(--anim);
-    }
-    }
+  &:hover,
+  &:focus {
+    fill: #d41443;
+    transition: fill var(--anim);
+  }
+}
 
 .footer_wrapper {
-    margin: 40px 0 0 35px;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    gap: 5px;
+  margin-top: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 .footer__text {
-    font-size: 12px;
-    font-weight: 700;
-    color: #000;
-    line-height: 1.86;
-    letter-spacing: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.86;
+  letter-spacing: 0;
 
-    @include mq(tab) {
-        font-size: 14px;
-}
+  @include mq(tab) {
+    font-size: 14px;
+  }
 
-    @include mq(desk) {
-        font-size: 16px;
-}
+  @include mq(desk) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 .footer__contacts-link {
-        color: rgba(212,20,67,1);
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 1.86;
-        letter-spacing: 0;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0;
+
+  @include mq(tab) {
+    font-size: 14px;
+  }
+
+  @include mq(desk) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer-bottom {
-    padding-top: 16px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  padding-top: 16px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 
-    @include mq(tab) {
-        padding-top: 8px;
-        display: flex;
-        flex-direction: row;
-    }
+  @include mq(tab) {
+    padding-top: 8px;
+    flex-direction: row;
+  }
 
-    @include mq(desk) {
-        padding-top: 8px;
-}
+  @include mq(desk) {
+    padding-top: 8px;
+  }
 }
 
 .footer-bottom--border {
-    border: 1px solid #e1e1e1;
+  border-top: 1px solid var(--color-linear);
 }
 
 .footer-bottom__text {
-       font-size: 14px;
-    font-family: DMSans,sans-serif;
-    text-align: center;
-    font-weight: 700;
-    color: #907e82;
-    line-height: 1.52;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  color: #907e82;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
 }
