@@ -16,6 +16,11 @@
 
   @include mq(desk) {
     @include section;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-bg-section) 27%,
+      var(--color-light) 27%
+    );
   }
 }
 
