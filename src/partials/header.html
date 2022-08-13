@@ -1,13 +1,17 @@
 <header class="header">
 	<div class="container">
 		<div class="header__top">
-			<a href="#" class="header__logo">
+			<a href="#" class="header__logo" aria-label="Ice cream shop logo">
 				<svg class="logo__icon" width="200" height="50">
 					<use href="./images/icons.svg#logo"></use>
 				</svg>
 			</a>
 			<nav data-mobile-menu class="header__mobile-menu mob-menu is-hidden">
-				<button data-mobile-menu-close type="button" class="mob-menu__close">+</button>
+				<button data-mobile-menu-close type="button" class="mob-menu__close">
+					<svg class="mob-menu__close-icon" width="16" height="16">
+						<use href="./images/icons.svg#close"></use>
+					</svg>
+				</button>
 				<button class="mob-menu__btn button">
 					Buy now
 					<svg class="button__icon" width="4" height="8">
@@ -41,7 +45,11 @@
 					</li>
 				</ul>
 			</nav>
-			<button data-mobile-menu-open type="button" class="header__icon-menu">=</button>
+			<button data-mobile-menu-open type="button" class="header__icon-menu">
+				<svg class="header__menu-icon" width="22" height="14">
+					<use href="./images/icons.svg#burger"></use>
+				</svg>
+			</button>
 			<button class="header__btn button">
 				Buy now
 				<svg class="button__icon" width="6" height="10">
@@ -49,6 +57,6 @@
 				</svg>
 			</button>
 		</div>
-		<div class="header__hero hero"></div>
+		<include src="./partials/hero.html"></include>
 	</div>
 </header>

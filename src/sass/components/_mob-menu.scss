@@ -4,19 +4,28 @@
 	right: 0;
 	height: 100%;
 	width: 250px;
+	z-index: 100;
 	background-color: var(--color-menu-bg);
 	padding: 60px 20px 0;
-	transition: var(--anim);
+	transition: all 0.4s ease;
 
 	&__close {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 14px;
-		height: 14px;
+		background-color: var(--color-menu-bg);
 		position: absolute;
 		top: 20px;
 		right: 20px;
+
+		&:hover .mob-menu__close-icon,
+		&:focus .mob-menu__close-icon {
+			fill: var(--color-accent);
+		}
+	}
+
+	&__close-icon {
+		fill: var(--color-light);
 	}
 
 	&__btn {
@@ -53,6 +62,10 @@
 	&__link--active {
 		color: var(--color-accent);
 	}
+}
+
+.mob-menu.header__btn {
+	display: none;
 }
 
 .mob-menu.is-hidden {

@@ -1,4 +1,6 @@
 .menu {
+	position: relative;
+	z-index: 10;
 	&__list {
 		display: flex;
 		column-gap: 35px;
