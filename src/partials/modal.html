@@ -1,8 +1,8 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal__close" type="button" data-modal-close>
       <svg class="modal__close-icon" width="32" height="32">
-        <use href="./images/icons.svg#cross"></use>
+        <use href="./images/icons.svg#close"></use>
       </svg>
     </button>
     <form class="form">
@@ -24,21 +24,106 @@
             placeholder="John Dough"
         /></label>
         <label class="field"
-          >Phone<input
+          ><span class="field_label">Phone</span
+          ><input
             type="tel"
             class="field__input"
             name="phone"
             placeholder="+38 (***)***-**-**"
         /></label>
         <label class="field"
-          >Email<input
+          ><span class="field_label">Email</span
+          ><input
             type="email"
             class="field__input"
             name="email"
             placeholder="example@email.com"
         /></label>
+        <div class="checkbox__wrapper">
+          <div class="checkbox__inner">
+            <label class="checkbox modal__checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="icecream"
+                value="terms-check"
+              />
+              <svg class="checkbox__icon" width="11" height="8">
+                <use
+                  class="checkbox__content"
+                  href="./images/icons.svg#icecream"
+                ></use>
+              </svg>
+              <span class="checkbox__text">Vanilla</span>
+            </label>
+            <label class="checkbox modal__checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="icecream"
+                value="terms-check"
+              />
+              <svg class="checkbox__icon" width="11" height="8">
+                <use
+                  class="checkbox__content"
+                  href="./images/icons.svg#icecream"
+                ></use>
+              </svg>
+              <span class="checkbox__text">Chocolate</span>
+            </label>
+          </div>
+          <div class="checkbox__inner">
+            <label class="checkbox modal__checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="icecream"
+                value="terms-check"
+              />
+              <svg class="checkbox__icon" width="11" height="8">
+                <use
+                  class="checkbox__content"
+                  href="./images/icons.svg#icecream"
+                ></use>
+              </svg>
+              <span class="checkbox__text">Strawberry</span>
+            </label>
+            <label class="checkbox modal__checkbox">
+              <input
+                class="checkbox__input"
+                type="checkbox"
+                name="icecream"
+                value="terms-check"
+              />
+              <svg class="checkbox__icon" width="11" height="8">
+                <use
+                  class="checkbox__content"
+                  href="./images/icons.svg#milkshake"
+                ></use>
+              </svg>
+              <span class="checkbox__text">Milkshake</span>
+            </label>
+          </div>
+        </div>
+        <div class="checkbox__container">
+          <label class="checkbox modal__checkbox">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="icecream"
+              value="terms-check"
+            />
+            <svg class="checkbox__icon" width="11" height="8">
+              <use
+                class="checkbox__content"
+                href="./images/icons.svg#icecoffee"
+              ></use>
+            </svg>
+            <span class="checkbox__text">Icecoffee</span>
+          </label>
+        </div>
       </div>
-      <button class="button" type="submit">Place order</button>
+      <button class="button button--accent" type="submit">Place order</button>
     </form>
   </div>
 </div>
