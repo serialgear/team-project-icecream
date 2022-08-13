@@ -1,12 +1,15 @@
-.advantages{
-    padding-top: 40px;
-    padding-bottom: 60px;
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+  }
 }
 
-
-.advantages__list{
-  @media (min-width:768px) {display: flex;
-    
+.advantages__list {
+  @media (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -14,19 +17,16 @@
 //   margin-bottom: 16px;
 
 //   @media (min-width:768px) {margin-bottom: 36px;
-  
+
 //   }
 
-
 //   @media (min-width:1200px) {margin-bottom: 40px;
-  
+
 //   }
 
 // }
 
-
-
-.first-png::before{
+.first-png::before {
   content: '';
   display: block;
   width: 50px;
@@ -36,23 +36,20 @@
   background-size: cover;
   margin-bottom: 16px;
 
-  @media  (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx){
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     background-image: url(../images/advantages-icon/adv-bucket-milk@2x.png);
-
-    }
-
-    @media (min-width:768px) {margin-bottom: 36px;
-  
-    }
-
-  @media (min-width:1200px) {margin-bottom: 40px;
-  
   }
-  
+
+  @media (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
-
-.second-png::before{
+.second-png::before {
   content: '';
   display: block;
   width: 50px;
@@ -62,20 +59,19 @@
   background-size: cover;
   margin-bottom: 16px;
 
-  @media  (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx){
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     background-image: url(../images/advantages-icon/adv-bucket-apples@2x.png);
-
-    }
-
-    @media (min-width:768px) {margin-bottom: 36px;
-  
   }
-  @media (min-width:1200px) {margin-bottom: 40px;
-  
+
+  @media (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
   }
 }
 
-.third-png::before{
+.third-png::before {
   content: '';
   display: block;
   width: 45px;
@@ -85,19 +81,17 @@
   background-size: cover;
   margin-bottom: 16px;
 
-  @media  (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx){
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     background-image: url(../images/advantages-icon/adv-heart@2x.png);
-
-    }
-
-    @media (min-width:768px) {margin-bottom: 36px;
-  
   }
-  @media (min-width:1200px) {margin-bottom: 40px;
-  
+
+  @media (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
   }
 }
-
 
 .advantages__title {
   font-family: 'Titan One';
@@ -110,64 +104,52 @@
 
   color: #d41443;
 
-  margin-bottom: 4px;
+  margin-bottom: 20px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     font-size: 48px;
     line-height: 1.145;
     margin-bottom: 13px;
-  
   }
 
-
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     font-size: 58px;
     line-height: 1.137;
     margin-bottom: 16px;
-  
   }
-
-
-
 }
 
 .advantages__text {
-   display: inline-block;
+  display: inline-block;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-  
 
   color: #000000;
   max-width: 230px;
   width: 100%;
 
-
-  @media (min-width:768px) {max-width: 180px;
-  
+  @media (min-width: 768px) {
+    max-width: 180px;
   }
 
-
-  @media (min-width:1200px) {max-width: 288px;
-  
+  @media (min-width: 1200px) {
+    max-width: 288px;
   }
-
 }
 
-.advantages__item:not(:last-child)>.advantages__text{
-  @media (max-width:767px) { margin-bottom: 32px;
-    
+.advantages__item:not(:last-child) > .advantages__text {
+  @media (max-width: 767px) {
+    margin-bottom: 32px;
   }
 
-  @media (min-width:768px) {margin-right: 5px;
-  
+  @media (min-width: 768px) {
+    margin-right: 5px;
   }
 
-
-  @media (min-width:1200px) {margin-right: 100px;
-  
+  @media (min-width: 1200px) {
+    margin-right: 100px;
   }
-   
 }
