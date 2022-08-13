@@ -56,16 +56,12 @@
   float: left;
   /* vertical gutter */
   margin-bottom: var(--gutter);
-  // border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
   // border: 1px solid #333;
 
   @include mq(tab) {
     @include img-width();
     height: 104px;
     margin-bottom: var(--gutter);
-    // border-radius: 20px;
   }
 
   @include mq(desk) {
