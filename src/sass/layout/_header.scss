@@ -1,6 +1,12 @@
 .header {
 	background-color: var(--color-accent-bg);
 	overflow: hidden;
+	&__container {
+		@include mq(tab-only) {
+			padding: 0 32px;
+		}
+	}
+
 	&__top {
 		display: flex;
 		align-items: center;
