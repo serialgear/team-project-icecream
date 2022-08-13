@@ -79,6 +79,12 @@
   position: relative;
 }
 
+.icecream-card:not(:last-child) {
+  @include mq(mob-only) {
+    margin-bottom: 140px;
+  }
+}
+
 .icecream-card--wrap {
   border-radius: 24px;
   // margin-top: 127px;
