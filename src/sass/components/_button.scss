@@ -1,40 +1,40 @@
 .button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	column-gap: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 13px;
 
-	height: 44px;
-	padding: 0 37px;
-	background-color: var(--color-light-btn-bg);
-	border-radius: 22px;
+  height: 44px;
+  padding: 0 37px;
+  background-color: var(--color-light);
+  border-radius: 22px;
 
-	color: var(--color-accent);
-	font-weight: 700;
-	line-height: 1.31;
+  color: var(--color-accent);
+  font-weight: 700;
+  line-height: 1.31;
 
-	transition: background-color var(--anim);
+  transition: background-color var(--anim);
 
-	&__icon {
-		fill: var(--color-accent);
-	}
+  &__icon {
+    fill: var(--color-accent);
+  }
 
-	&:hover,
-	&:focus {
-		background-color: var(--color-hover-btn-bg);
-	}
+  &:hover,
+  &:focus {
+    background-color: var(--color-hover-btn-bg);
+  }
 }
 
 .button--accent {
-	background-color: var(--color-accent-btn-bg);
-	color: var(--color-light);
+  background-color: var(--color-accent);
+  color: var(--color-light);
 
-	&:hover,
-	&:focus {
-		background-color: rgba(212, 20, 68, 0.78);
-	}
+  &:hover,
+  &:focus {
+    background-color: rgba(212, 20, 68, 0.78);
+  }
 }
 
 .button__icon--accent {
-	fill: var(--color-light);
+  fill: var(--color-light);
 }

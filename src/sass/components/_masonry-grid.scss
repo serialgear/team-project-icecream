@@ -1,0 +1,132 @@
+/* ---- Masonry ---- */
+/* ---- grid ---- */
+:root {
+  --gutter: 2px;
+  --column: 7;
+}
+
+@include mq(tab) {
+  :root {
+    --gutter: 6px;
+  }
+}
+
+@include mq(desk) {
+  :root {
+    --gutter: 8px;
+  }
+}
+
+// Width all images
+@mixin img-width() {
+  width: calc((100% - var(--gutter) * (var(--column) - 1)) / var(--column));
+}
+
+// Width large image
+@mixin img-width-large() {
+  width: calc(
+    ((100% - var(--gutter) * (var(--column) - 1)) / var(--column)) * 2 +
+      var(--gutter)
+  );
+}
+
+.grid {
+  max-width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer {
+  @include img-width();
+  height: 44px;
+  float: left;
+  // border: 1px solid #333;
+}
+
+.grid-item {
+  @include img-width();
+  height: 44px;
+  float: left;
+  /* vertical gutter */
+  margin-bottom: var(--gutter);
+  // border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  // border: 1px solid #333;
+
+  @include mq(tab) {
+    @include img-width();
+    height: 104px;
+    margin-bottom: var(--gutter);
+    // border-radius: 20px;
+  }
+
+  @include mq(desk) {
+    @include img-width();
+    height: 138px;
+    margin-bottom: var(--gutter);
+  }
+}
+
+.grid-item--width2 {
+  @include img-width-large();
+  height: 90px;
+
+  @include mq(tab) {
+    @include img-width-large();
+    height: 214px;
+  }
+
+  @include mq(desk) {
+    @include img-width-large();
+    height: 284px;
+  }
+}
+
+.grid-item--height2 {
+  height: 26px;
+  @include mq(tab) {
+    height: 61px;
+  }
+  @include mq(desk) {
+    height: 80px;
+  }
+}
+.grid-item--height3 {
+  height: 29px;
+  @include mq(tab) {
+    height: 68px;
+  }
+  @include mq(desk) {
+    height: 90px;
+  }
+}
+.grid-item--height4 {
+  height: 19px;
+  @include mq(tab) {
+    height: 44px;
+  }
+  @include mq(desk) {
+    height: 57px;
+  }
+}
+.grid-item--height5 {
+  height: 47px;
+  @include mq(tab) {
+    height: 111px;
+  }
+  @include mq(desk) {
+    height: 146px;
+  }
+}
+
+.grid-item--marg {
+  margin-bottom: 0;
+}
