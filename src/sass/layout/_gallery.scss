@@ -5,6 +5,14 @@
     var(--color-bg-section) 20%,
     var(--color-light) 20%
   );
+
+  @include mq(tab-only) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-bg-section) 57%,
+      var(--color-light) 57%
+    );
+  }
 }
 
 .gallery__container {
