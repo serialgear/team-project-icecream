@@ -1,4 +1,4 @@
-.backdrop {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -31,11 +31,13 @@
     var(--color-bg-section) 21%,
     var(--color-bg-section) 100%
   );
-
-  // background-repeat: no-repeat;
-  // background-position: 115px 150px;
-  // background-size: 430px;
 }
+
+// .modal.active,
+// .overlay.active {
+//   opacity: 1;
+//   visibility: visible;
+// }
 
 .modal__close {
   position: absolute;
