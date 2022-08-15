@@ -40,6 +40,13 @@
     }
   }
 
+  &__container {
+    @include mq(tab-only) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
   &__label {
     font-family: var(--font-family-secondary);
     font-size: 18px;
@@ -145,7 +152,7 @@
   height: 15px;
 }
 
-.about__container {
+.about__thumb {
   display: block;
 
   @include mq(tab) {
@@ -160,7 +167,7 @@
 .about__img-wrapper {
   @include mq(tab-only) {
     flex: 1;
-    margin: 0px 32px 0px 16px;
+    margin: 0px 32px 0px 0px;
   }
 
   @include mq(desk) {
