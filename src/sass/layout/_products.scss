@@ -64,7 +64,7 @@
   letter-spacing: 0.04em;
 }
 
-.icecream-card_text {
+.icecream-card_text , .product-modal__text{
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -90,6 +90,7 @@
   // margin-top: 127px;
   padding: 40px;
   padding-top: 161px;
+  
 }
 
 .icecream-card--pink {
@@ -144,7 +145,7 @@
   .products_list {
     display: flex;
   }
-  .icecream-card_text {
+  .icecream-card_text  , .product-modal__text{
     line-height: 176%;
   }
   // .icecream-card {
@@ -209,7 +210,7 @@
     padding-right: 45px;
     padding-bottom: 50px;
   }
-  .icecream-card_text {
+  .icecream-card_text , .product-modal__text {
     font-size: 16px;
     margin-bottom: 60px;
   }
@@ -223,4 +224,28 @@
     letter-spacing: 0.04em;
     top: 55px;
   }
+}
+
+.products_item{position: relative;}
+
+.products-modal{
+  padding-top: 37%;
+  display: block;
+  width: 100%;
+  height: 60%;
+  background-color: #c7798d;
+  
+  position: absolute;
+  top:20%;
+  left: 0;
+  border-radius: 24px;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.second-color-modal{background-color: #caa94c;
+  }
+
+.third-color-modal{background-color: #41734B;
+  
 }
