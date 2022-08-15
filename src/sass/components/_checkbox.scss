@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+
+  @include mq(tab) {
+    margin-bottom: 16px;
+  }
 }
 
 .checkbox__inner {
@@ -15,7 +19,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
+  @include mq(tab) {
+    margin-bottom: 24px;
+  }
 }
 
 .checkbox {
