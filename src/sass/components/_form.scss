@@ -1,4 +1,7 @@
 .form {
+  min-width: 250px;
+  width: 100%;
+
   @include mq(mob-only) {
     max-width: 250px;
   }
