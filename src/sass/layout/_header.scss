@@ -52,6 +52,7 @@
 		justify-content: center;
 		align-items: center;
 		background-color: var(--color-accent-bg);
+		transition: all 0.4s ease;
 
 		@include mq(tab) {
 			margin-right: 30px;
@@ -71,6 +72,7 @@
 
 		@include mq(tab) {
 			display: flex;
+			transition: all 0.4s ease;
 		}
 	}
 
