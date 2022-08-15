@@ -1,9 +1,10 @@
 // Gallery
 .gallery {
+  @include section(30px, 30px);
   background-image: linear-gradient(
     to bottom,
-    var(--color-bg-section) 20%,
-    var(--color-light) 20%
+    var(--color-bg-section) 29%,
+    var(--color-light) 29%
   );
 
   @include mq(tab-only) {
