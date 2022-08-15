@@ -1,4 +1,7 @@
 .form {
+  @include mq(mob-only) {
+    max-width: 250px;
+  }
 }
 
 .form__title {
