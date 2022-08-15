@@ -33,13 +33,18 @@
   }
 }
 .contacts__list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  // display: flex;
+  // gap: 20px;
+  // flex-wrap: wrap;
 
   margin-bottom: 32px;
 
   @include mq(tab) {
+
+    display: flex;
+    flex-wrap: wrap;
+
+
     margin-bottom: 60px;
     gap: 32px;
   }
@@ -54,12 +59,22 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  @media screen and (max-width: 767px) {
-    gap: 20px;
+  &:not(:last-child){
+    margin-bottom: 20px;
   }
+
+  // @media screen and (max-width: 767px) {
+  //   gap: 20px;
+    
+  // }
 
   @media screen and (min-width: 768px) {
     @include flex-based(3, 32px);
+
+    &:not(:last-child){
+      margin-bottom: 0;
+    }
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -82,15 +97,22 @@
   background: #f0d1a5;
   border-radius: 4px;
   max-width: 80px;
+  // max-height: 16px;
+  margin-bottom: 20px;
+ 
   @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
     border-radius: 6px;
     max-width: 73px;
+    font-size: 16px;
+    max-height: 100%;
   }
 }
 
 .contacts__category--bgcolor {
   background: #c2e297;
   min-width: 130px;
+  
   @media screen and (min-width: 768px) {
     border-radius: 6px;
     max-width: 138px;
@@ -99,16 +121,16 @@
 
 .contacts__title {
   font-weight: 500;
-  margin-top: 20px;
   margin-bottom: 8px;
+  font-size: 12px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    margin-top: 32px;
     margin-bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    margin-bottom: 8px;
   }
 }
 
@@ -130,18 +152,25 @@
     max-width: 250px;
   }
 }
-
-.contacts__timetable {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-top: 24px;
+.contacts__tumb {
   padding-bottom: 24px;
-  border-top: 1px solid var(--color-linear);
+
   border-bottom: 1px solid var(--color-linear);
 
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
-    margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+}
+.contacts__timetable {
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--color-linear);
+ 
+
+  @media screen and (min-width: 768px) {
+   
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -177,7 +206,13 @@
     font-size: 16px;
   }
 }
+.contacts__list-communication{
+  padding-top: 24px;
 
+  @media screen and (min-width: 768px) {
+      padding-top: 32px;
+    }
+}
 .contacts__item-communication {
   font-weight: 500;
   line-height: 1.5;
