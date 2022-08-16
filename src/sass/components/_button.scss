@@ -38,3 +38,34 @@
 .button__icon--accent {
 	fill: var(--color-light);
 }
+
+.button-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	background-color: var(--color-light-btn-bg);
+	transition: background-color var(--anim);
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-accent-btn-bg);
+	}
+
+	&:hover .button-arrow__icon,
+	&:focus .button-arrow__icon {
+		fill: var(--color-light);
+	}
+
+	&__icon {
+		fill: var(--color-accent);
+		transition: fill var(--anim);
+	}
+
+	@include mq(desk) {
+		width: 26px;
+		height: 26px;
+	}
+}

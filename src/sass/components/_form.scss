@@ -1,4 +1,7 @@
 .form {
+  min-width: 250px;
+  width: 100%;
+
   @include mq(mob-only) {
     max-width: 250px;
   }
@@ -34,7 +37,7 @@
   display: block;
 }
 
-.field:not(:last-of-type) {
+.form__field:not(:last-of-type) {
   margin-bottom: 8px;
 
   @include mq(tab) {
@@ -44,11 +47,11 @@
 
 .field_label {
   display: block;
-  margin-left: 16px;
-  margin-right: auto;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.86;
+  text-indent: 16px;
 }
 
 .field__input {

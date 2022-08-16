@@ -1,0 +1,42 @@
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--color-circle-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.4s ease;
+
+  animation: circle 1.5s ease alternate-reverse infinite;
+
+  &__icon {
+    transform: rotate(-90deg);
+    fill: var(--color-light);
+  }
+}
+
+.scroll-top--active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@keyframes circle {
+  0% {
+    box-shadow: 0 0 0 0 #ffb8ca;
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 184, 202, 0.6);
+  }
+}

@@ -1,9 +1,9 @@
 .advantages {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 
   background-color: var(--color-bg-section);
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     @include section;
   }
 }
@@ -103,7 +103,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--color-accent);
 
   margin-bottom: 20px;
 
@@ -128,7 +128,7 @@
   font-size: 12px;
   line-height: 170%;
 
-  color: #000000;
+  color: var(--color-primary);
   max-width: 230px;
   width: 100%;
 
@@ -141,7 +141,7 @@
   }
 }
 
-.advantages__item:not(:last-child) > .advantages__text {
+.advantages__item:not(:last-child) {
   @media (max-width: 767px) {
     margin-bottom: 32px;
   }
@@ -154,3 +154,5 @@
     margin-right: 100px;
   }
 }
+
+

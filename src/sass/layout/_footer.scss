@@ -20,13 +20,17 @@
     font-family: Titan One, cursive;
     width: 234px;
     text-transform: uppercase;
+
     text-align: left;
+    margin-bottom: 40px;
 
     @include mq(tab) {
       width: 340px;
+      margin-bottom: 12px;
     }
     @include mq(desk) {
       width: 480px;
+      margin: 0;
     }
 
     &--pink {
@@ -34,6 +38,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.17;
+      margin-bottom: 16px;
 
       @include mq(tab) {
         font-size: 26px;
@@ -49,7 +54,6 @@
     }
 
     &--crimson {
-      margin-top: 16px;
       font-weight: 400;
       font-size: 34px;
       line-height: 1.15;
@@ -73,17 +77,11 @@
 }
 
 .footer-social {
-  margin-top: 40px;
-
   @include mq(tab) {
-    margin-top: 70px;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-
-  @include mq(desk) {
-    margin: 0;
   }
 }
 
@@ -114,15 +112,8 @@
   }
 }
 
-.footer_wrapper {
-  margin-top: 40px;
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-end;
-  gap: 5px;
-}
-
 .footer__text {
+  padding: 40px 0 40px 45px;
   font-size: 12px;
   font-weight: 700;
   color: #000;
@@ -157,7 +148,6 @@
 
 .footer-bottom {
   padding-top: 16px;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
