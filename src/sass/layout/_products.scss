@@ -64,7 +64,8 @@
   letter-spacing: 0.04em;
 }
 
-.icecream-card_text , .product-modal__text{
+.icecream-card_text,
+.product-modal__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -90,7 +91,6 @@
   // margin-top: 127px;
   padding: 40px;
   padding-top: 161px;
-  
 }
 
 .icecream-card--pink {
@@ -145,7 +145,8 @@
   .products_list {
     display: flex;
   }
-  .icecream-card_text  , .product-modal__text{
+  .icecream-card_text,
+  .product-modal__text {
     line-height: 176%;
   }
   // .icecream-card {
@@ -210,7 +211,8 @@
     padding-right: 45px;
     padding-bottom: 50px;
   }
-  .icecream-card_text , .product-modal__text {
+  .icecream-card_text,
+  .product-modal__text {
     font-size: 16px;
     margin-bottom: 60px;
   }
@@ -226,34 +228,40 @@
   }
 }
 
-.products_item{position: relative;}
- .products-modal{display: none;}
+.products_item {
+  position: relative;
+}
+.products-modal {
+  display: none;
+}
 
-.products-modal.is-open{
-  
-
+.products-modal.is-open {
   display: block;
   text-align: center;
   padding-top: 16%;
   display: block;
   width: 90%;
   height: 60%;
-  
-  
+
   position: absolute;
-  top:20%;
+  top: 20%;
   left: 5%;
   border-radius: 24px;
-  
+
   padding-left: 10px;
   padding-right: 10px;
 
-
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(16px);
-  
+
   // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   // box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-@media screen and (min-width: '768px') and (max-width:'1199px') {.product-modal__text{line-height: 116%;}}
+@media screen and (min-width: '768px') and (max-width: '1199px') {
+  .product-modal__text {
+    line-height: 116%;
+  }
+}
