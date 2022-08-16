@@ -1,69 +1,73 @@
 .mob-menu {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 250px;
-	z-index: 100;
-	background-color: var(--color-menu-bg);
-	padding: 60px 20px 0;
-	transition: all 0.4s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 80;
+  background-color: var(--color-menu-bg);
+  padding: 60px 20px 0;
+  transition: all 0.4s ease;
 
-	&__close {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: var(--color-menu-bg);
-		position: absolute;
-		top: 20px;
-		right: 20px;
+  @media (min-width: 480px) {
+    width: 250px;
+  }
 
-		&:hover .mob-menu__close-icon,
-		&:focus .mob-menu__close-icon {
-			fill: var(--color-accent);
-		}
-	}
+  &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-menu-bg);
+    position: absolute;
+    top: 20px;
+    right: 20px;
 
-	&__close-icon {
-		fill: var(--color-light);
-	}
+    &:hover .mob-menu__close-icon,
+    &:focus .mob-menu__close-icon {
+      fill: var(--color-accent);
+    }
+  }
 
-	&__btn {
-		margin: 0 auto 20px;
-		width: 100%;
+  &__close-icon {
+    fill: var(--color-light);
+  }
 
-		@include mq(tab) {
-			width: 185px;
-		}
-	}
+  &__btn {
+    margin: 0 auto 20px;
+    width: 290px;
 
-	&__item {
-		margin: 0 -20px;
-		border-top: 1px solid var(--color-other);
-		&:last-child {
-			border-bottom: 1px solid var(--color-other);
-		}
-	}
+    @media (min-width: 480px) {
+      width: 100%;
+    }
 
-	&__link {
-		display: block;
-		padding: 12px 20px;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.28;
-		color: var(--color-light);
+    @include mq(tab) {
+      width: 185px;
+    }
+  }
 
-		&:hover,
-		&:focus {
-			color: var(--color-accent);
-		}
-	}
-}
+  &__item {
+    margin: 0 -20px;
+    border-top: 1px solid var(--color-other);
+    &:last-child {
+      border-bottom: 1px solid var(--color-other);
+    }
+  }
 
-.mob-menu.header__btn {
-	display: none;
+  &__link {
+    display: block;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: var(--color-light);
+
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }
 }
 
 .mob-menu.is-hidden {
-	right: -100%;
+  right: -100%;
 }
