@@ -64,7 +64,8 @@
   letter-spacing: 0.04em;
 }
 
-.icecream-card_text {
+.icecream-card_text,
+.product-modal__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
@@ -144,7 +145,8 @@
   .products_list {
     display: flex;
   }
-  .icecream-card_text {
+  .icecream-card_text,
+  .product-modal__text {
     line-height: 176%;
   }
   // .icecream-card {
@@ -209,7 +211,8 @@
     padding-right: 45px;
     padding-bottom: 50px;
   }
-  .icecream-card_text {
+  .icecream-card_text,
+  .product-modal__text {
     font-size: 16px;
     margin-bottom: 60px;
   }
@@ -222,5 +225,45 @@
     font-size: 20px;
     letter-spacing: 0.04em;
     top: 55px;
+  }
+}
+
+.products-modal {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 5;
+  top: 20%;
+  left: 5%;
+  border-radius: 24px;
+
+  text-align: center;
+  padding-top: 16%;
+  width: 90%;
+  height: 60%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+
+  transform: scale(0);
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  transition: opacity var(--anim), visibility var(--anim), transform var(--anim);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@media screen and (min-width: '768px') and (max-width: '1199px') {
+  .product-modal__text {
+    line-height: 1.16;
   }
 }
