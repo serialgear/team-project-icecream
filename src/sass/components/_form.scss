@@ -37,7 +37,7 @@
   display: block;
 }
 
-.field:not(:last-of-type) {
+.form__field:not(:last-of-type) {
   margin-bottom: 8px;
 
   @include mq(tab) {
