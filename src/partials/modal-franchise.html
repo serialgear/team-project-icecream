@@ -1,0 +1,121 @@
+<div class="modal modal-franchise js-modal" data-modal="3">
+  <button class="modal__close js-modal-close" type="button">
+    <svg class="modal__close-icon" width="32" height="32">
+      <use href="./images/icons.svg#close"></use>
+    </svg>
+  </button>
+  <form class="form">
+    <div
+      class="form__group"
+      role="group"
+      aria-labelledby="contact-details-head"
+    >
+      <h2 class="form__title" id="contact-details-head">Come join our team</h2>
+      <p class="form__text">Our company is the best for your business!</p>
+      <label class="field modal-franchise__field"
+        ><span class="field_label">Company Name</span
+        ><input
+          type="text"
+          class="field__input"
+          name="name"
+          placeholder="Ice-Cream Inc"
+      /></label>
+      <label class="field modal-franchise__field"
+        ><span class="field_label">Phone</span
+        ><input
+          type="tel"
+          class="field__input"
+          name="phone"
+          placeholder="+61(0) *** *** ***"
+      /></label>
+      <label class="field modal-franchise__field"
+        ><span class="field_label">Email</span
+        ><input
+          type="email"
+          class="field__input"
+          name="email"
+          placeholder="example@email.com"
+      /></label>
+      <div
+        class="modal-franchise__wrapper"
+        role="group"
+        arial-labelby="choice-of-place"
+      >
+        <p class="form__text" id="choice-of-place">
+          Choose a place where you want to earn
+        </p>
+        <label class="field modal-franchise__field">
+          <input
+            type="text"
+            class="field__input"
+            name="state"
+            placeholder="State"
+            list="states"
+        /></label>
+        <datalist id="states">
+          <option>Alabama</option>
+          <option>Alaska</option>
+          <option>Arizona</option>
+          <option>Arkansas</option>
+          <option>California</option>
+          <option>Colorado</option>
+          <option>Connecticut</option>
+          <option>Delaware</option>
+          <option>District of Columbia</option>
+          <option>Florida</option>
+          <option>Georgia</option>
+          <option>Hawaii</option>
+          <option>Idaho</option>
+          <option>Illinois</option>
+          <option>Indiana</option>
+          <option>Iowa</option>
+          <option>Kansas</option>
+          <option>Kentucky</option>
+          <option>Louisiana</option>
+          <option>Maine</option>
+          <option>Maryland</option>
+          <option>Massachusetts</option>
+          <option>Michigan</option>
+          <option>Minnesota</option>
+          <option>Mississippi</option>
+          <option>Missouri</option>
+          <option>Montana</option>
+          <option>Nebraska</option>
+          <option>Nevada</option>
+          <option>New Hampshire</option>
+          <option>New Jersey</option>
+          <option>New Mexico</option>
+          <option>New York</option>
+          <option>North Carolina</option>
+          <option>North Dakota</option>
+          <option>Ohio</option>
+          <option>Oklahoma</option>
+          <option>Oregon</option>
+          <option>Pennsylvania</option>
+          <option>Rhode Island</option>
+          <option>South Carolina</option>
+          <option>South Dakota</option>
+          <option>Tennessee</option>
+          <option>Texas</option>
+          <option>Utah</option>
+          <option>Vermont</option>
+          <option>Virginia</option>
+          <option>Washington</option>
+          <option>West Virginia</option>
+          <option>Wisconsin</option>
+          <option>Wyoming</option>
+        </datalist>
+        <label class="field modal-franchise__field">
+          <input
+            type="text"
+            class="field__input"
+            name="city"
+            placeholder="City"
+        /></label>
+      </div>
+    </div>
+    <button class="button button--accent modal__button" type="submit">
+      Join us!
+    </button>
+  </form>
+</div>

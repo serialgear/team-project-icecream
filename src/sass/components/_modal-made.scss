@@ -35,3 +35,34 @@
   text-align: center;
   color: var(--color-menu-bg);
 }
+
+@include mq(mob-only) {
+  .modal-made__text {
+    display: inline;
+  }
+
+  .modal-made__btn {
+    padding: 0;
+    background-color: transparent;
+    color: var(--color-menu-bg);
+  }
+
+  #more {
+    display: none;
+  }
+
+  #moreFirst {
+    display: none;
+  }
+
+  #moreSecond {
+    display: none;
+  }
+}
+
+@include mq(tab) {
+  .modal-made__btn,
+  .modal-made__dots {
+    display: none;
+  }
+}
