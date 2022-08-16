@@ -7,7 +7,6 @@
 
   &--media {
     @include mq(tab) {
-      width: 690px;
       display: flex;
       justify-content: space-between;
     }
