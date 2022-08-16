@@ -127,25 +127,27 @@
 	}
 
 	&__btn {
+		padding: 0;
 		font-weight: 400;
 		font-size: 8px;
 		line-height: 1.25;
 		height: 24px;
-		padding: 0 14px;
+		width: 65px;
 
 		@include mq(desk) {
 			font-size: 14px;
 			line-height: 1.28;
 			height: 40px;
-			padding: 0 25px;
+			width: 110px;
 		}
 	}
 
 	&__btn-other {
-		padding: 0 14px;
+		padding: 0;
+		width: 85px;
 
 		@include mq(desk) {
-			padding: 0 20px;
+			width: 140px;
 		}
 	}
 
@@ -167,6 +169,7 @@
 	}
 
 	&__box {
+		position: relative;
 		@include mq(desk) {
 			margin-top: 50px;
 		}
@@ -186,6 +189,44 @@
 			line-height: 140%;
 			max-width: 200px;
 			margin-bottom: 20px;
+		}
+	}
+
+	&__secret-box {
+		position: absolute;
+		bottom: 35%;
+		left: -10%;
+		z-index: 5;
+		background-color: var(--color-light-bg);
+		width: 200px;
+		padding: 15px;
+		border-radius: 24px;
+		box-shadow: 0 0 10px 5px rgba(212, 20, 68, 0.5);
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0);
+		transition: all var(--anim);
+
+		@include mq(desk) {
+			left: -5%;
+			width: 300px;
+			padding: 20px;
+		}
+	}
+
+	&__secret-text {
+		color: var(--color-description);
+		font-weight: 500;
+		font-size: 9px;
+		line-height: 130%;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		@include mq(desk) {
+			font-size: 14px;
+			line-height: 140%;
 		}
 	}
 }
@@ -258,22 +299,8 @@
 	}
 }
 
-.button-arrow {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 18px;
-	height: 18px;
-	border-radius: 100%;
-	background-color: var(--color-light-btn-bg);
-
-	&__icon {
-		fill: var(--color-accent);
-	}
-
-	@include mq(desk) {
-		width: 26px;
-		height: 26px;
-	}
+.active {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
 }
