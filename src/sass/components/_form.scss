@@ -1,4 +1,10 @@
 .form {
+  min-width: 250px;
+  width: 100%;
+
+  @include mq(mob-only) {
+    max-width: 250px;
+  }
 }
 
 .form__title {
@@ -32,7 +38,11 @@
 }
 
 .field:not(:last-of-type) {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+
+  @include mq(tab) {
+    margin-bottom: 16px;
+  }
 }
 
 .field_label {

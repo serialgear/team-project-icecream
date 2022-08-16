@@ -2,25 +2,37 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+
+  @include mq(tab) {
+    margin-bottom: 16px;
+  }
 }
 
 .checkbox__inner {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .checkbox__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
+  @include mq(tab) {
+    margin-bottom: 24px;
+  }
 }
 
 .checkbox {
   display: flex;
-  gap: 10px;
+  gap: 4px;
+
+  @include mq(tab) {
+    gap: 10px;
+  }
 }
 
 .checkbox__input {

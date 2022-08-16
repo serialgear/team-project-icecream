@@ -23,11 +23,26 @@ $review-linear-gradient-desk: repeating-linear-gradient(
 );
 
 .review {
-  @include section;
+  @include section(30px, 30px);
 
   background-color: var(--color-light);
+
+  @include mq(tab) {
+    @include section(30px, 40px);
+  }
+
   @include mq(desk) {
     @include section;
+  }
+}
+
+.review__inner {
+  @include mq(tab) {
+    padding: 0 64px;
+  }
+
+  @include mq(desk) {
+    padding: 0 100px;
   }
 }
 
@@ -49,14 +64,14 @@ $review-linear-gradient-desk: repeating-linear-gradient(
   background-color: var(--color-review-bg);
 
   @include mq(tab) {
-    margin: 0 64px 24px;
+    margin-bottom: 24px;
     padding: 37px 6px 36px;
 
     background-color: var(--color-light--color-review-bg-tab);
   }
 
   @include mq(desk) {
-    margin: 0 100px 36px;
+    margin-bottom: 36px;
     padding: 47px 74px 31px 72px;
 
     background-color: var(--color-review-bg);
