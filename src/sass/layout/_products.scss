@@ -227,8 +227,9 @@
 }
 
 .products_item{position: relative;}
+ .products-modal{display: none;}
 
-.products-modal{
+.products-modal.is-open{
   padding-top: 37%;
   display: block;
   width: 100%;
@@ -243,9 +244,9 @@
   padding-left: 5px;
   padding-right: 5px;
 }
-.second-color-modal{background-color: #caa94c;
+.second-color-modal.is-open{background-color: #caa94c;
   }
 
-.third-color-modal{background-color: #41734B;
+.third-color-modal.is-open{background-color: #41734B;}
   
-}
+
