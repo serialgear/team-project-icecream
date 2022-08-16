@@ -231,8 +231,8 @@
 .products-modal {
   opacity: 0;
   visibility: hidden;
-  // pointer-events: none;
   position: absolute;
+  z-index: 5;
   top: 20%;
   left: 5%;
   border-radius: 24px;
@@ -260,7 +260,6 @@
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  // pointer-events: auto;
 }
 
 @media screen and (min-width: '768px') and (max-width: '1199px') {
