@@ -102,12 +102,11 @@
   text-decoration: none;
   color: #ffffff;
   fill: #fea5bb;
-  transition: background-color var(--anim);
+  transition: fill var(--anim);
 
   &:hover,
   &:focus {
     fill: #d41443;
-    transition: fill var(--anim);
   }
 }
 
