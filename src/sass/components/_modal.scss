@@ -10,8 +10,7 @@
   backdrop-filter: blur(10px);
   z-index: 100;
 
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--anim-slow), visibility var(--anim-slow);
 }
 
 .overlay.is-shown {
@@ -41,9 +40,8 @@
     var(--color-bg-section) 100%
   );
 
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--anim-slow), visibility var(--anim-slow),
+    transform var(--anim-slow);
 
   @include mq(tab) {
     width: 550px;
