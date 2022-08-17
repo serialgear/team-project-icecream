@@ -1,8 +1,12 @@
 .modal-franchise {
+  @include mq(mob-only) {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
 }
 
 .modal-franchise__field:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   @include mq(tab) {
     margin-bottom: 16px;
   }
